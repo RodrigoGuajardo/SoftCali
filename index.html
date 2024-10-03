@@ -3,21 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Queso</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>ONG Life & Sustainability Today</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-<div id="fondo">
-
-    <h1>Calculadora de Huella CO2 alimentos</h1>
-
-
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptates id quos, cumque ipsa illo deserunt perferendis quidem. Voluptas odio nemo minus voluptatum commodi totam, sint aut velit suscipit dolor!</p>
-
-
-</div>
+    <!-- Encabezado -->
+    <header>
+        <h1>Life & Sustainability Today</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#calculadora">Calculadora</a></li>
+                <li><a href="#acceso">Acceso Premium</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    
+    <!-- Sección Principal -->
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a Life & Sustainability Today</h2>
+            <p>Conoce el impacto ambiental de tus alimentos y platos favoritos.</p>
+        </section>
+
+        <!-- Calculadora -->
+        <section id="calculadora">
+            <h2>Calculadora de Huella de Carbono y Nutrición</h2>
+            <form>
+                <label for="alimento">Seleccione el Alimento o Plato:</label>
+                <select id="alimento" name="alimento">
+                    <option value="pollo">Pollo</option>
+                    <option value="pasta">Pasta</option>
+                    <!-- Añadir opciones según sea necesario -->
+                </select>
+                <button type="button" onclick="calcular()">Calcular</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+
+        <!-- Sección de Acceso a Usuarios Premium -->
+        <section id="acceso">
+            <h2>Acceso Premium</h2>
+            <p>¿Eres usuario premium? <a href="registro.html">Inicia sesión</a> para acceder a información exclusiva.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Life & Sustainability Today. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
