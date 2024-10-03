@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONG Life & Sustainability Today</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life & Sustainability Today</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Encabezado -->
-    <header>
-        <h1>Life & Sustainability Today</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#calculadora">Calculadora</a></li>
-                <li><a href="#acceso">Acceso Premium</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <!-- Sección Principal -->
-    <main>
-        <section id="inicio">
-            <h2>Bienvenido a Life & Sustainability Today</h2>
-            <p>Conoce el impacto ambiental de tus alimentos y platos favoritos.</p>
-        </section>
+  <!-- Encabezado y Menú de Navegación -->
+  <header>
+    <h1>Life & Sustainability Today</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#calculator">Calculadora</a></li>
+        <li><a href="#about">Sobre Nosotros</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Calculadora -->
-        <section id="calculadora">
-            <h2>Calculadora de Huella de Carbono y Nutrición</h2>
-            <form>
-                <label for="alimento">Seleccione el Alimento o Plato:</label>
-                <select id="alimento" name="alimento">
-                    <option value="pollo">Pollo</option>
-                    <option value="pasta">Pasta</option>
-                    <!-- Añadir opciones según sea necesario -->
-                </select>
-                <button type="button" onclick="calcular()">Calcular</button>
-            </form>
-            <div id="resultado"></div>
-        </section>
+  <!-- Sección de Calculadora -->
+  <section id="calculator">
+    <h2>Calculadora de Huella de Carbono</h2>
+    <form id="carbonCalculator">
+      <label for="food">Seleccione un alimento:</label>
+      <select id="food" name="food">
+        <option value="chicken">Pollo</option>
+        <option value="beef">Carne de Res</option>
+        <option value="pasta">Pasta</option>
+        <!-- Añadir más opciones según sea necesario -->
+      </select>
+      <button type="button" onclick="calculateCarbonFootprint()">Calcular</button>
+    </form>
+    <div id="result"></div>
+  </section>
 
-        <!-- Sección de Acceso a Usuarios Premium -->
-        <section id="acceso">
-            <h2>Acceso Premium</h2>
-            <p>¿Eres usuario premium? <a href="registro.html">Inicia sesión</a> para acceder a información exclusiva.</p>
-        </section>
-    </main>
+  <!-- Sección de Información -->
+  <section id="about">
+    <h2>Sobre Nosotros</h2>
+    <p>Life & Sustainability Today está comprometida con la protección del medio ambiente y la reducción del impacto ambiental en áreas clave.</p>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Life & Sustainability Today. Todos los derechos reservados.</p>
-    </footer>
+  <!-- Sección de Contacto -->
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p>Para más información, <a href="mailto:info@lifeandsustainabilitytoday.org">contáctenos</a>.</p>
+  </section>
 
-    <script src="js/script.js"></script>
+  <!-- Pie de Página -->
+  <footer>
+    <p>&copy; 2023 Life & Sustainability Today</p>
+  </footer>
+
+  <script src="calculos.js"></script>
 </body>
 </html>
