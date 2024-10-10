@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life & Sustainability Today - Calculadora</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Life & Sustainability Today</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="calculator.html">Calculadora</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+            <button class="burger-menu">&#9776;</button>
+        </nav>
+    </header>
+
+    <!-- Sección de la Calculadora -->
+    <main>
+        <section id="calculator" class="section">
+            <h2>Calculadora de Huella de Carbono</h2>
+            <p>Calcula la huella de carbono de tus alimentos y platos.</p>
+            <form id="carbon-calculator">
+                <label for="food-item">Ingrediente o Plato:</label>
+                <input type="text" id="food-item" name="food-item" placeholder="Ej. Pollo al horno con arroz">
+                <button type="submit">Calcular</button>
+            </form>
+            <div id="results"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Life & Sustainability Today. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
